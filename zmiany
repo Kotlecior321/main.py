@@ -1,0 +1,7 @@
+import random
+signs = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+leng = int(input("Jaka będzie długość hasła"))
+password = ""
+for i in range(leng):
+    password += signs[random.randint(0,len(signs))]
+print(password)
